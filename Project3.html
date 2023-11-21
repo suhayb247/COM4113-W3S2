@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="d-flex">
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Reports</a>
+                <!-- More links -->
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn" id="menu-toggle">Toggle Menu</button>
+                <!-- More header content -->
+            </nav>
+
+            <!-- Content Area -->
+            <div class="container-fluid">
+                <h1 class="mt-4">Dashboard Main</h1>
+                <div class="row">
+                    <div class="col-xl-6 col-md-12 mb-4">
+                        <div class="card">
+                            <div class="card-body">Widget or Summary Info</div>
+                        </div>
+                    </div>
+                    <!-- More widgets or cards -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                Recent Activity
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Your Name</td>
+                                            <td>Surname</td>
+                                            <td>@YourTag</td>
+                                        </tr>
+                                        <!-- More table rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal">
+                <!-- Modal content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <script>
+        // Optional JavaScript for toggling the sidebar
+        document.getElementById("menu-toggle").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("sidebar-wrapper").classList.toggle("toggled");
+        });
+    </script>
+</body>
+</html>
